@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="../images/4.jpg" type="image/x-icon">
+    <title>Typing Speed Game</title>
+</head>
+<body>
+    <button id="btn-set" class="btn-set"><small>Design By <span style="color: white;">M.I Musa</span></small></button>
+    <button id="btn-set" class="back"><small><a href="index.html" style="color: white;" class="bi bi-arrow-left"></a></small></button>
+
+    <div class="sets" id="sets">
+        <form action="" id="form">
+            <label for="level"><span>Level :</span> 
+                <select name="level" id="level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </label>
+        </form>
+    </div>
+
+    <div class="container">
+         <small>TYPE THE WORD BELOW</small>
+         <h1 id="word" class=" animate__animated animate__slideInUp"></h1>
+         <input type="text" id="text" autofocus class="form-control" placeholder="Type the word above" autocomplete="on">
+         <p class="timer mt-3">Time Left: <span id="time">20s</span></p>
+         <p class="score mt-3">Score: <span id="score">0</span></p>
+        
+         <div class="game-over" id="game-over"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

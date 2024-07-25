@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Bold;
+  src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: reg;
+  src: url('../fonts/Raleway-Regular.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Mont;
+}
+
+
+#body{
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../images/4.jpg');
+  background-size: cover;
+}
+
+#body h1{
+  color: #fff;
+  font-family: Bold;
+  margin-top: 120px;
+  font-size: 60px;
+}
+#body h1 span{
+  font-family: Bold;
+  color:  aqua;
+}
+#body p{
+  color: #fff;
+  line-height: 2.0em;
+  font-family: reg;
+}
+#body button{
+  background-color: aqua;
+  box-shadow: none;
+  border:  none;
+  font-family: reg;
+  color: black;
+  padding: 15px;
+  border-radius: 30px;
+}
+#body button:hover{
+  background-color: transparent;
+  border:  2px solid aqua;
+  color: #fff;
+}
+#services h1{
+  color: #000;
+  text-align: center;
+  font-family: Bold;
+  margin-bottom: 50px;
+}

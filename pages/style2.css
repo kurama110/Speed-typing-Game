@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Bold;
+    src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: reg;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(5, 10, 34);
+}
+
+button{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+label span{
+    font-family: Bold;
+    font-size: x-large;
+}
+
+select{
+    padding: 5px;
+    width: 100px;
+    font-size: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 1vh;
+    background-color: white;
+}
+
+select:focus,
+input:focus,
+button:focus{
+    outline: none;
+}
+
+.btn-set{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(5, 10, 34);
+    box-shadow: 0 0 2px 1px rgb(1, 95, 95);
+}
+
+
+.back {
+    position: absolute;
+    top: 44px;
+    z-index: 1;
+    left: 30px;
+    background-color: rgb(5, 10, 34);
+    box-shadow: 0 0 2px 1px rgb(1, 95, 95);
+}
+
+.sets{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: reg;
+    transform: rotateY(0);
+    transition: transform 1s ease-in-out;
+    background-color: rgb(1, 95, 95);
+    border-bottom: 2px solid rgb(1, 95, 95);
+}
+
+.sets.hide{
+    transform: rotateY(-100%);
+}
+
+.container{
+    padding: 20px;
+    color: white;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 2vh;
+    box-shadow: 0 0 13px 3px rgb(1, 95, 95);
+   background-color: rgb(5, 10, 34);
+font-family: reg;
+}
+
+input{
+    border-radius: 2vh;
+    padding: 2vh;
+    margin-top: 60px;
+
+}
+
+small{
+    color: rgb(0, 187, 187);
+}
+.score{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding-top: 15px;
+}
+
+.timer{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    padding-top: 15px;
+}
+
+.game-over{
+    font-family: Bold;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    border-radius: 2vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    z-index: 1;
+    text-transform: uppercase;
+}
